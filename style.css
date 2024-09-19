@@ -1,0 +1,251 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#banner {
+    background: linear-gradient(rgba(0,0,0,0.05),#FFFFFF),url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+}
+.logo{
+    width:300px;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+}
+.banner-text{
+    text-align: center;
+    color: #000;
+    padding-top: 50px;
+}
+.banner-text hl{
+    font-size: 80px;
+    font-family: Copperplate, Papyrus, fantasy;
+    color:whitesmoke
+}
+.banner-text p{
+    font-size: 30px;
+    font-family: "Playpen Sans", cursive;
+    font-style: italic;
+    color: darkgreen
+}
+.banner-btn{
+   margin-bottom: 20px;
+}
+.banner-btn a{
+    font-size: 30px;
+    font-family: "Playpen Sans", cursive;
+    width: 250px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10Px 10px;
+    padding: 20px 0;
+    color: cornflowerblue;
+    border: 3px solid #fff;
+    position: relative;
+    z-index: 1;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.1s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+
+#sidenav{
+    width: :250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white
+}
+#menuBtn{
+        width: 40px;
+        height: 40px;
+        background: #009688;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        border-radius: 3;
+        z-index: 3;
+        cursor: pointer;
+}
+#menuBtn img{
+    width: 25px;
+    margin-top: 15px;
+}
+.gallery-section {
+    margin: -270px auto;
+    text-align: center;
+    width: 80%;        
+    max-width: 1200px;  
+    padding: 20px;
+    position: absolute;
+    transform: translateX(10%);
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery container to center images */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Center the images horizontally inside the container */
+    gap: 20px;                /* Space between images */
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 40px); /* Ensure each image takes 25% of the width with space between */
+    max-width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+}
+.about-us-section {
+    margin: 20px auto; 
+    width: 80%;        
+    max-width: 100px;
+    padding: 20px;
+    position: absolute;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.about-us-section h2 {
+    font-size: 28px;
+    color: darkgreen;
+    font-family: "Playpen Sans", cursive;
+    margin-bottom: 20px;
+}
+.form-section {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                url('https://st2.depositphotos.com/2309415/10401/i/450/depositphotos_104014692-stock-photo-flying-the-plane-performs-aerobatics.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Playpen Sans", cursive;
+    color: darkgreen;
+}
+
+.join-club-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.join-club-form input, 
+.join-club-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.join-club-form input[type="radio"],
+.join-club-form input[type="checkbox"] {
+    width: auto;
+}
+
+.join-club-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.join-club-form button:hover {
+    background-color: #00796b;
+}
+.opening-times-section {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.opening-times-section h2 {
+    text-align: center;
+    font-family: "Playpen Sans", cursive;
+    color: darkgreen;
+    margin-bottom: 20px;
+}
+
+.opening-times-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.opening-times-table thead {
+    background-color: #009688;
+    color: white;
+}
+
+.opening-times-table th, 
+.opening-times-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+}
+
+.opening-times-table th {
+    font-size: 18px;
+}
+
+.opening-times-table td {
+    font-size: 16px;
+}
+
+.opening-times-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

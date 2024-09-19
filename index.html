@@ -1,0 +1,159 @@
+<html>
+<head>
+      <title><Aeromodelling Club></title>
+      <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+<section id="banner">
+    <img src="Images/Sparrow Aviation logo.png" class="logo">
+    <div class="banner-text">
+        <hl>Aeromodelling Club</hl>
+        <p>Your path to sky begins here</p>
+        <div class="banner-btn">
+            <a href="#"><span></span>Join Us</a>
+            <a href="#"><span></span>Our Journey</a>
+        </div>
+    </div>
+</section>
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Our Locations</a></li>
+    </ul>
+    </nav>
+    </div> 
+    <div id="menuBtn">
+        <img src="Images/menubar.png" id="menu">
+    </div>
+    
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+menuBtn.onclick = function(){
+        if(sideNav.style.right == "-350px"){
+            sideNav.style.right = "0";
+        }
+        else{
+            sideNav.style.right = "-350px";
+        }
+}
+</script>
+    
+<section class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://assets.ennomotive.com/wp-content/uploads/2016/04/20092751/p2-1.jpg">
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFCpOBlIVhm5cWDSKv69X8-m4UYgxPyJR0CQ&s">
+        </div>
+        <div class="gallery-item">
+            <img src="https://outerzone.co.uk/images/_thumbs/viewpoint/8/1.jpg">
+        </div>
+        <div class="gallery-item">
+            <img src="https://st2.depositphotos.com/2309415/10401/i/450/depositphotos_104014692-stock-photo-flying-the-plane-performs-aerobatics.jpg">
+        </div>
+    </div>
+</section>
+    
+<section class="about-us-section">
+    <h2>About Us</h2>
+    <p class="intro-paragraph">
+        Aeromodelling is a hobby that combines both art and science into one form. It is a hobby of building and flying scale airplanes that can be controlled by multiple means. It is both a hobby and a sport. Sparrow Aviation was started with a vision to impart the knowledge and legacy of aeromodelling to younger generations. A membership at this club provides access to multiple airfields spread across the United States, weekly and monthly magazines, and a platform to connect with experts. Come fly with us today!
+    </p>
+</section>
+<section class="form-section">
+    <h2>Join the Aeromodelling Club</h2>
+    <form action="#" method="POST" class="join-club-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+
+        <label for="interests">Select Your Interest:</label>
+        <select id="interests" name="interests">
+            <option value="planes">Planes</option>
+            <option value="drones">Drones</option>
+            <option value="helicopters">Helicopters</option>
+        </select><br>
+
+        <label for="membership">Membership Type:</label><br>
+        <input type="radio" id="regular" name="membership" value="regular" checked>
+        <label for="regular">Regular</label><br>
+        <input type="radio" id="premium" name="membership" value="premium">
+        <label for="premium">Premium</label><br>
+
+        <label for="subscribe">Subscribe to our newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe"><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</section>
+    <!-- Club Opening Times Table Section -->
+<section class="opening-times-section">
+    <h2>Club Opening Times</h2>
+    <table class="opening-times-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Opening Time</th>
+                <th>Closing Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>07:00 AM</td>
+                <td>05:00 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>07:00 AM</td>
+                <td>05:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>07:00 AM</td>
+                <td>05:00 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>07:00 AM</td>
+                <td>05:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>07:00 AM</td>
+                <td>05:00 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>Sunrise</td>
+                <td>Sunset</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Sunrise</td>
+                <td>Sunset</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+</body>
+</html>
