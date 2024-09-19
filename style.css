@@ -4,7 +4,7 @@
     padding: 0;
 }
 #banner {
-    background: linear-gradient(rgba(0,0,0,0.05),#FFFFFF),url(images/background.jpg);
+    background: linear-gradient(rgba(0,0,0,0.05),#FFFFFF),url(https://s3.eu-central-1.amazonaws.com/wordpress-production-offloaded-ennomotive/wp-content/uploads/2016/04/p1-1.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
